@@ -45,7 +45,35 @@ if (operator === "+" || operator === "-"|| operator === "*" || operator === "/" 
    console.log("Nhập lại")
 }
 */
-
+const operator = prompt("Enter operator ( either +, -, * or / ): ");
+let a = Number(prompt("Nhập số a: "));
+let b = Number(prompt("Nhập số b: "));
+let result;
+switch(operator){
+   case '+':{
+      result = a + b;
+      break;
+   }
+   case '-':{
+      result = a - b; 
+      break;
+   }
+   case '*':{
+      result = a * b; 
+      break;
+   }
+   case '/':{
+      result = a / b;
+   }
+   default:{
+      alert("Nhap lai!");
+   }
+}
+if (operator === "+" || operator === "-"|| operator === "*" || operator === "/"  ) {
+   console.log(`${a} ${operator} ${b} = ${result}`);
+} else {
+   console.log("Nhập lại")
+}
 /*
 2. Viết chương trình tìm số nguyên tố
 - Kiến thức về if...else
